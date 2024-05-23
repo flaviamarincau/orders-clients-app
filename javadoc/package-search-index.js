@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"java","l":"businessLayer"},{"m":"java","l":"connection"},{"m":"java","l":"dataAcessLayer"},{"m":"java","l":"model"},{"m":"java","l":"presentation"},{"m":"java","l":"start"}];updateSearchResults();

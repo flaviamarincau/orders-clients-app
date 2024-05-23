@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e4cbef;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.ControllerOrderOperations">
+    <left>
+        <AnchorPane prefHeight="372.0" prefWidth="314.0" BorderPane.alignment="CENTER" />
+    </left>
+    <top>
+        <AnchorPane prefHeight="0.0" prefWidth="552.0" BorderPane.alignment="CENTER" />
+    </top>
+    <right>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <TableView fx:id="tableOrders" layoutX="-7.0" layoutY="139.0" prefHeight="230.0" prefWidth="600.0">
+                    <columns>
+                        <TableColumn fx:id="orderIdTableColumn" prefWidth="107.99999856948853" text="Order ID" />
+                        <TableColumn fx:id="clientIdTableColumn" prefWidth="109.59998321533203" text="Client ID" />
+                        <TableColumn fx:id="productIdTableColumn" prefWidth="114.39996337890625" text="Product ID" />
+                        <TableColumn fx:id="quantityTableColumn" prefWidth="132.0" text="Quantity" />
+                        <TableColumn fx:id="orderDateTableColumn" prefWidth="144.79995727539062" text="Order date" />
+                    </columns>
+                </TableView>
+                <Label layoutX="257.0" layoutY="8.0" prefHeight="27.0" prefWidth="71.0" text="Orders" textFill="#1f1e20">
+                    <font>
+                        <Font name="Century Gothic Bold" size="21.0" />
+                    </font>
+                </Label>
+                <Button fx:id="deleteOrderButton" layoutX="33.0" layoutY="90.0" mnemonicParsing="false" onAction="#deleteOrderButtonOnAction" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: #424445;" text="Delete order" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                    </font>
+                </Button>
+                <Button fx:id="updateOrderButton" layoutX="453.0" layoutY="90.0" mnemonicParsing="false" onAction="#updateOrderButtonOnAction" prefHeight="30.0" prefWidth="118.0" style="-fx-background-color: #424445;" text="Update order" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                    </font>
+                </Button>
+                <Button fx:id="addOrderButton" layoutX="236.0" layoutY="90.0" mnemonicParsing="false" onAction="#addOrderButtonOnAction" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: #424445;" text="Add order" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                    </font>
+                </Button>
+            <DatePicker fx:id="editDateDatePicker" layoutX="205.0" layoutY="49.0" promptText="edit date..." />
+            </children>
+        </AnchorPane>
+    </right>
+    <bottom>
+        <AnchorPane prefHeight="41.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="goBackButton" layoutX="-8.0" layoutY="12.0" mnemonicParsing="false" onAction="#goBackButtonOnAction" prefHeight="32.0" prefWidth="119.0" style="-fx-background-color: #424445;" text="Go back" textFill="WHITE">
+                    <font>
+                        <Font name="Century Gothic Bold" size="13.0" />
+                    </font>
+                </Button>
+            <Label fx:id="errorLabel" layoutX="126.0" layoutY="13.0" prefHeight="18.0" prefWidth="472.0" textAlignment="CENTER" textFill="#d90a0a">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            </children></AnchorPane>
+    </bottom>
+</BorderPane>

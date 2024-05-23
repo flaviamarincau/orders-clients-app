@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #CBFAD6;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.ControllerCreateOrder">
+   <top>
+      <AnchorPane prefHeight="71.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="199.0" layoutY="20.0" prefHeight="30.0" prefWidth="202.0" text="Create your orders">
+               <font>
+                  <Font name="Calibri" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <AnchorPane prefHeight="198.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="26.0" layoutY="31.0" prefHeight="26.0" prefWidth="122.0" text="Select a client">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="clientComboBox" layoutX="198.0" layoutY="31.0" prefHeight="26.0" prefWidth="230.0" />
+            <Label layoutX="26.0" layoutY="94.0" prefHeight="26.0" prefWidth="133.0" text="Select a product">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="productComboBox" layoutX="198.0" layoutY="94.0" prefHeight="26.0" prefWidth="230.0" />
+            <TextField fx:id="quantityField" layoutX="198.0" layoutY="160.0" prefHeight="26.0" prefWidth="76.0" />
+            <Label layoutX="26.0" layoutY="160.0" prefHeight="26.0" prefWidth="133.0" text="Insert quantity">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="errorLabel" layoutX="14.0" layoutY="201.0" prefHeight="18.0" prefWidth="571.0" textAlignment="CENTER" textFill="#ef0404">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <AnchorPane prefHeight="87.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="220.0" layoutY="14.0" mnemonicParsing="false" onAction="#finalizeOrderButtonOnAction" prefHeight="39.0" prefWidth="159.0" text="Finish orders">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="goBackButton" layoutY="69.0" mnemonicParsing="false" onAction="#goBackButtonOnAction" prefHeight="42.0" prefWidth="112.0" text="Go back" />
+            <Button fx:id="seeOrdersButton" layoutX="488.0" layoutY="69.0" mnemonicParsing="false" onAction="#seeOrdersButtonOnAction" prefHeight="42.0" prefWidth="112.0" text="See orders" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
