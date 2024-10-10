@@ -22,7 +22,7 @@ To get started with this project, clone the repository and build it using Maven:
 
 ```sh
 git clone https://github.com/flaviamarincau/orders-clients-app.git
-cd your-repo
+cd orders-clients-app
 mvn clean install
 ```
 
