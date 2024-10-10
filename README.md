@@ -1,6 +1,6 @@
 # Order-Client Management Application
 
-This project is a Java-based application that demonstrates various concepts such as object-oriented programming, database interaction, and GUI development using JavaFX.
+This project is a Java-based application that demonstrates various concepts such as object-oriented programming, database interaction, GUI development using JavaFX and JavaDoc for commenting relevant pieces of code.
 
 ## Features
 
